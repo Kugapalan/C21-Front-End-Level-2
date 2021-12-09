@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url('../C21-Front-End-Level-2/images/watercolor.jpg');
+            background-size: 100%;
+             }
+    </style>
+
+    <div id="groet" >Goedemorgen </div>
+    <button onclick="document.querySelector('#groet').innerHTML='Goedenavond';">Vervang de groet </button>
+    
+    <p>
+    
+    <div id="Tekst" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente voluptatibus minima laborum, quasi cumque vitae ad sed id? Temporibus neque sed cupiditate veniam dolores esse, modi fugiat in voluptatum id quam incidunt praesentium illum placeat, sapiente, labore culpa repellendus ullam doloribus sequi alias! Expedita temporibus, vero maiores quo vitae quisquam? Commodi excepturi earum itaque optio totam labore quos laboriosam beatae est, temporibus modi cum suscipit exercitationem autem. Ducimus ut corporis nesciunt reprehenderit nisi doloremque amet in eius hic fugit.</div>
+    <button onclick="document.getElementById('Tekst').innerHTML='Hier stond tekst';">Haal tekst weg</button>
+    
+    <p>
+
+    <div class="logo2"><img src="./images/images.png"></div>
+    <button onclick="document.querySelector('.logo2').innerHTML='Hier stond een logo';">Verwijder logo</button>
+
+    <p>
+
+    <div class="Lorem">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</div>
+    <button onclick="document.querySelector('.Lorem').innerHTML='Hier stond de content van de class lorem';">Verwijder tekst class lorem</button>
+    <p>
+
+    <div class="body"> </div>
+    <button onclick="document.querySelector('body').innerHTML='hier stond alle content van de body';">Verwijder de body </button>
+    
+    <p>
+</body>
+</html>
